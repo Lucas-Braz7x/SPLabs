@@ -6,3 +6,14 @@
 
   background: $background-color;
 }
+
+
+.container--responsive {
+  @media (min-width: 391px) {
+    padding: 0 7.8125%;
+  }
+
+  @media (max-width: 390px) {
+    padding: 0 7.692308%;
+  }
+}
