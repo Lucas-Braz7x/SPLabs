@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnchorLink } from '../../Ui';
 import './styles.scss';
 
 export const Header = () => {
@@ -6,12 +7,12 @@ export const Header = () => {
     <header className="header">
       <span className="header__sp-labs">SP labs_</span>
       <nav className="header__navigation nav">
-        <a className="link nav__link--color-white" href="#">
+        <AnchorLink elementClassName="nav__link--color-white" to="#">
           cases
-        </a>
-        <a className="link nav__link--color-white" href="#">
+        </AnchorLink>
+        <AnchorLink elementClassName="nav__link--color-white" to="#">
           contato
-        </a>
+        </AnchorLink>
       </nav>
     </header>
   );

@@ -1,0 +1,133 @@
+@import '../../../sass/variables.scss';
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 156px;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Roboto';
+  color: $background-color;
+
+  .hero-section__hero {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    max-width: 640px;
+
+    .hero__title {
+      font-size: $font-size-max;
+      font-weight: 700;
+      line-height: 72px;
+      max-height: 284px;
+      align-self: stretch;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+
+      .hero__title--font-style {
+        font-family: bodoni72;
+        font-weight: 400;
+        font-size: 73px;
+        line-height: 72px;
+        letter-spacing: -1.5%;
+
+        @media (min-width: 1080px) {
+          font-size: 79px;
+        }
+      }
+    }
+
+    .hero__subtitle {
+      font-family: 'Roboto';
+      font-weight: 600;
+      font-size: $font-size-small;
+      line-height: 30px;
+      align-self: stretch;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+
+  .hero-section__bg {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &::before {
+      content: '';
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background: url(../../../assets/image/background-image.jpg) no-repeat center center;
+      background-size: cover;
+    }
+
+    .bg__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      background: $grey-scale-color;
+      mix-blend-mode: color;
+
+    }
+
+    &::after {
+      content: '';
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background: $grey-scale-color;
+      mix-blend-mode: color;
+    }
+
+
+    .bg__effect {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100vw;
+      height: 100vh;
+      background: $grey-scale-color;
+
+
+    }
+
+    .bg__effect--blend-effect-color {
+      z-index: 3;
+      mix-blend-mode: color;
+    }
+
+    .bg__effect--blend-effect-normal {
+      z-index: 2;
+      mix-blend-mode: normal;
+    }
+  }
+
+  @media (min-width: 1280px) {
+
+    .hero__title {
+      font-size: $font-size-extra-max;
+    }
+  }
+
+}
