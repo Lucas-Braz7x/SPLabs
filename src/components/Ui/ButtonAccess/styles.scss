@@ -1,0 +1,64 @@
+@import '../../../sass/variables.scss';
+
+.button-access {
+  width: 132px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 24px;
+
+  border: 1px solid $grey-color;
+  border-radius: 4px;
+
+  background: none;
+
+  &__text {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: $font-size-tiny;
+    font-weight: 500;
+    line-height: 150%;
+    color: #343434;
+  }
+
+  &__arrow-image {
+    width: 24px;
+    height: 24px;
+
+    animation: translate-back-image .3s linear;
+  }
+
+  transition: border-color .3s;
+
+  &:hover {
+    border-color: #343434;
+
+    .button-access__arrow-image {
+      animation: translate-image .3s linear forwards;
+    }
+  }
+}
+
+@keyframes translate-image {
+  from {
+    translate: 0;
+  }
+
+  to {
+    translate: 5px;
+  }
+}
+
+@keyframes translate-back-image {
+  from {
+    translate: 5px;
+  }
+
+  to {
+    translate: 0;
+  }
+}
