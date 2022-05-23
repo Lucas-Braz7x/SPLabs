@@ -11,7 +11,7 @@
   font-family: 'Roboto';
   color: $background-color;
 
-  .hero-section__hero {
+  &__hero {
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -30,16 +30,12 @@
         text-transform: capitalize;
       }
 
-      .hero__title--font-style {
+      &--font-style {
         font-family: bodoni72;
         font-weight: 400;
-        font-size: 73px;
+        font-size: 7.3rem;
         line-height: 72px;
         letter-spacing: -1.5%;
-
-        @media (min-width: 1080px) {
-          font-size: 79px;
-        }
       }
     }
 
@@ -57,7 +53,7 @@
   }
 
 
-  .hero-section__bg {
+  &__bg {
     width: 100vw;
     position: absolute;
     top: 0;
@@ -74,7 +70,7 @@
       background-size: cover;
     }
 
-    .bg__image {
+    &__image {
       position: absolute;
       top: 0;
       left: 0;
@@ -99,7 +95,7 @@
     }
 
 
-    .bg__effect {
+    &__effect {
       display: none;
       position: absolute;
       top: 0;
@@ -109,25 +105,29 @@
       height: 100vh;
       background: $grey-scale-color;
 
+      &--blend-effect-color {
+        z-index: 3;
+        mix-blend-mode: color;
+      }
 
-    }
-
-    .bg__effect--blend-effect-color {
-      z-index: 3;
-      mix-blend-mode: color;
-    }
-
-    .bg__effect--blend-effect-normal {
-      z-index: 2;
-      mix-blend-mode: normal;
+      &--blend-effect-normal {
+        z-index: 2;
+        mix-blend-mode: normal;
+      }
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1080px) {
+    gap: 200px;
 
-    .hero__title {
-      font-size: $font-size-extra-max;
+    &__hero {
+      .hero__title {
+        font-size: $font-size-extra-max;
+
+        .hero__title--font-style {
+          font-size: 7.9rem;
+        }
+      }
     }
   }
-
 }

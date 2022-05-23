@@ -17,23 +17,27 @@
   letter-spacing: 10%;
   line-height: 150%;
 
+  &--bg-color {
+    background: #5DFED6;
+    transition: background .3s;
+
+    &:hover {
+      background: $hover-color;
+    }
+  }
+
+
+  &--size-mini {
+    @media (min-width: 391px) {
+      width: 80%;
+    }
+
+    @media (min-width: 550px) {
+      width: 240px;
+    }
+  }
+
   @media (max-width: 390px) {
     width: 100%;
-  }
-}
-
-
-.button--bg-color {
-  background: #5DFED6;
-}
-
-
-.button--size-mini {
-  @media (min-width: 391px) {
-    width: 80%;
-  }
-
-  @media (min-width: 550px) {
-    width: 240px;
   }
 }

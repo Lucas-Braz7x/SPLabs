@@ -7,5 +7,5 @@ export const Container = (props) => {
 };
 
 Container.propTypes = {
-  children: P.element.isRequired,
+  children: P.array,
 };
