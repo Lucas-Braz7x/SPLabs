@@ -1,12 +1,13 @@
 import React from 'react';
 import { AnchorLink } from '../../Ui';
+import { Logo } from '../../Ui';
 import './styles.scss';
 
 export const Footer = () => {
   return (
     <footer className="container--responsive footer">
       <div className="footer__information">
-        <span>SP labs</span>
+        <Logo classElement="footer__information__sp-labs--align" />
 
         <div className="footer__links links">
           <div className="links__items">

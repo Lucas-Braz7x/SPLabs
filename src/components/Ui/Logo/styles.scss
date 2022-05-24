@@ -1,0 +1,13 @@
+@import '../../../sass/variables.scss';
+
+.sp-labs {
+  display: block;
+  height: 46px;
+  width: 63px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: $font-size-medium;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+}
