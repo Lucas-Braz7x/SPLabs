@@ -1,6 +1,9 @@
 @import '../../../sass/variables.scss';
 
 .hero-section {
+  padding-top: 0;
+  padding-bottom: 0;
+
   display: flex;
   flex-direction: column;
   gap: 156px;
@@ -123,6 +126,7 @@
     &__hero {
       .hero__title {
         font-size: $font-size-extra-max;
+        height: 140px;
 
         .hero__title--font-style {
           font-size: 7.9rem;

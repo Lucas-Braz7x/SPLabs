@@ -7,7 +7,7 @@ export const CardCase = ({ cases }) => {
   return (
     <div className="cards-container__card">
       <span className="cards-container__card__case-title">{cases.title}</span>
-      <p className="cards-container__card__description">{cases.description}</p>
+      <p className="cards-container__card__description text--color-opacity-black">{cases.description}</p>
       <ButtonAccess />
     </div>
   );

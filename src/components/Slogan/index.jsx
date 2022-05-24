@@ -12,7 +12,7 @@ export const Slogan = () => {
         </h2>
       </div>
       <div className="cases-section__sub-title">
-        <h3 className="cases-section__sub-title__text-content">
+        <h3 className="cases-section__sub-title__text-content text--color-opacity-black">
           confira nossos cases de sucesso que vão além do mundo juridico.
         </h3>
       </div>
