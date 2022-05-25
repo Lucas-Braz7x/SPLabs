@@ -8,6 +8,7 @@
 
   &__input {
     opacity: 0;
+    display: none;
   }
 
   &__checkmark {
@@ -24,12 +25,13 @@
       display: none;
       content: '';
       position: absolute;
+      z-index: 3;
 
       top: 4.85px;
       left: 4.29px;
 
-      width: 11.96px;
-      height: 9.62px;
+      width: 12px;
+      height: 10px;
 
       background: url(../../../assets/image/checkmark.svg);
     }

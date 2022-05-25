@@ -5,9 +5,9 @@ import './styles.scss';
 
 export const CardCase = ({ solution }) => {
   return (
-    <div className="cards-container__card">
-      <span className="cards-container__card__case-title">{solution.title}</span>
-      <p className="cards-container__card__description text--color-opacity-black">{solution.description}</p>
+    <div className="card">
+      <span className="card__case-title">{solution.title}</span>
+      <p className="card__case-description text--color-opacity-black">{solution.description}</p>
       <ButtonAccess />
     </div>
   );

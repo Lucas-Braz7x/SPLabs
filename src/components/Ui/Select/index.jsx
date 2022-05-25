@@ -5,7 +5,7 @@ import './styles.scss';
 export const Select = (props) => {
   return (
     <select className={props.classElement + ' select'} name="segmento" id="segmento" required>
-      <option value="" disabled selected hidden>
+      <option selected disabled hidden>
         Seu segmento
       </option>
       {props.optionsSelect.map((option, index) => (

@@ -1,11 +1,27 @@
 import React from 'react';
-import { submitForm } from '../../services/api';
+import { useDispatch } from 'react-redux';
+
+import { api } from '../../services/api';
+import { openModal } from '../../store/action/action';
 import { Button, Checkbox, Select } from '../Ui';
+
 import './styles.scss';
 
 export const FormContact = () => {
+  const dispatch = useDispatch();
+
   const options = ['Tecnológico', 'Administrativo', 'Comercial'];
-  const handleSubmit = (event) => {
+
+  const submitForm = (name) => {
+    api
+      .post('/contact', {
+        name: name,
+      })
+      .then((response) => dispatch(openModal(response.data)))
+      .catch((err) => console.log(err));
+  };
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const message = {
@@ -16,7 +32,6 @@ export const FormContact = () => {
       checkbox: event.target.elements[4].checked,
     };
 
-    console.log(message);
     if (message.checkbox && message.select.length > 0) {
       submitForm(message.name);
     }
@@ -38,6 +53,7 @@ export const FormContact = () => {
         <p className="form__term__description">
           Declaro que conheço a Política de Privacidade e autorizo a utilização das minhas informações pelo SP Labs
         </p>
+        <p></p>
       </div>
       <Button type="submit">enviar</Button>
     </form>

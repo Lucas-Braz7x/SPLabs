@@ -13,6 +13,7 @@ export const VideoContainer = () => {
       </div>
       <div className="video__content">
         <embed
+          className="video__content__embed"
           src="https://www.youtube.com/embed/rH0vUtcLm5s"
           allowFullScreen={true}
           width="100%"

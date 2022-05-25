@@ -13,7 +13,7 @@
     padding: 80px 7.8125%;
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: $mini-breakpoint) {
     padding: 80px 7.692308%;
   }
 }
@@ -23,7 +23,7 @@
     padding: 0 7.8125%;
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: $mini-breakpoint) {
     padding: 0 7.692308%;
   }
 }

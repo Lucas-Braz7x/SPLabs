@@ -68,7 +68,7 @@
       color: #000000;
     }
 
-    @media (min-width: 1080px) {
+    @media (min-width: $medium-breakpoint) {
       width: 382px;
       min-height: 115px;
       height: auto;

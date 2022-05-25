@@ -7,10 +7,16 @@
 .cases-section {
   &__cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 524px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 524px));
     gap: 32px;
     height: auto;
     width: 100%;
+  }
+
+  @media(min-width: $large-breakpoint) {
+    &__cards-container {
+      row-gap: 80px;
+    }
   }
 
 }

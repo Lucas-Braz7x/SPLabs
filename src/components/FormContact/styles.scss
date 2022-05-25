@@ -55,8 +55,11 @@
     align-items: flex-start;
     gap: 16px;
     cursor: default;
+    position: relative;
 
     &__description {
+      display: block;
+      margin-left: 20px;
       width: 86.46617%;
       font-family: 'Roboto';
       font-weight: 400;
@@ -67,9 +70,13 @@
 
 }
 
-@media (min-width: 1080px) {
+@media (min-width: $medium-breakpoint) {
   .form {
     height: 584px;
+
+    &__term__description {
+      min-width: 320px;
+    }
   }
 }
 

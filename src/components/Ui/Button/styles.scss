@@ -25,6 +25,7 @@
 
     &:hover {
       background: $hover-color;
+      cursor: pointer;
     }
   }
 
@@ -39,7 +40,7 @@
     }
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: $mini-breakpoint) {
     width: 100%;
   }
 }

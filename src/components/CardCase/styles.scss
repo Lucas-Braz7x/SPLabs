@@ -1,42 +1,36 @@
 @import '../../sass/variables.scss';
 
-.cases-section {
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-  .cards-container {
-    &__card {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+  font-family: 'Roboto', sans-serif;
 
-      font-family: 'Roboto', sans-serif;
+  &__case-title {
+    font-weight: 700;
+    font-size: $font-size-medium;
+    line-height: 3.6rem;
+    align-self: stretch;
 
-      &__case-title {
-        font-weight: 700;
-        font-size: $font-size-medium;
-        line-height: 3.6rem;
-        align-self: stretch;
-
-        &::first-letter {
-          text-transform: capitalize;
-        }
-      }
-
-      &__description {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: $font-size-small;
-        line-height: 30px;
-        letter-spacing: -0.015em;
-        align-self: stretch;
-
-        white-space: break-spaces;
-
-        &::first-letter {
-          text-transform: capitalize;
-        }
-      }
+    &::first-letter {
+      text-transform: capitalize;
     }
   }
 
+  &__case-description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $font-size-small;
+    line-height: 30px;
+    letter-spacing: -0.015em;
+    align-self: stretch;
+
+    white-space: break-spaces;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
 }
