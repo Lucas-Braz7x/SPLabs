@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Header, HeroSection, Cases, VideoContainer, Contact, Footer } from '../components';
-import { Modal } from '../components/Ui/Modal';
+import { Modal } from '../components/Ui';
 
 export const Home = () => {
   return (
