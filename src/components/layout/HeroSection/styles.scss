@@ -104,5 +104,20 @@
         }
       }
     }
+
+  }
+
+  @media (max-width: 340px) {
+    &__hero {
+
+      .hero__title {
+        font-size: 5rem;
+        height: auto;
+
+        .hero__title--font-style {
+          font-size: 7rem;
+        }
+      }
+    }
   }
 }

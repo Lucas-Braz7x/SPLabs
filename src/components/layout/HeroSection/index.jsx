@@ -5,7 +5,7 @@ export const HeroSection = () => {
   return (
     <section className="container--responsive hero-section">
       <div className="hero-section__bg"></div>
-      <div className="hero-section__hero">
+      <div className="hero-section__hero hero">
         <h1 className="hero__title">
           imagine, crie, implemente e <span className="hero__title--font-style">evolua</span>
         </h1>
