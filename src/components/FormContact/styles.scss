@@ -1,0 +1,84 @@
+@import '../../sass/variables.scss';
+
+.form {
+  background: $background-color;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-width: 330px;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__input-content {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: $dark-grey-color;
+
+    height: 48px;
+    width: 100%;
+
+    background: rgba(255, 255, 255, .25);
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+
+    padding: 12px 16px;
+
+    outline: none;
+    cursor: pointer;
+
+    transition: border-color .3s;
+
+    &:hover {
+      border-color: $grey-color;
+    }
+
+    &:focus {
+      border-color: $hover-color;
+    }
+
+    &--height {
+
+      min-height: 174px;
+      max-height: 188px;
+    }
+  }
+
+  &__term {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    cursor: default;
+
+    &__description {
+      width: 86.46617%;
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: $font-size-tiny;
+      line-height: 21px;
+    }
+  }
+
+}
+
+@media (min-width: 1080px) {
+  .form {
+    height: 584px;
+  }
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../../assets/image/select-image.svg) no-repeat;
+  background-position: calc(100% - 16px) center;
+
+  padding-left: 12px;
+}

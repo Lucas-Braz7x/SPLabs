@@ -1,0 +1,10 @@
+@import '../../../sass/variables.scss';
+
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../../../assets/image/select-image.svg) no-repeat;
+  background-position: calc(100% - 16px) center;
+}
