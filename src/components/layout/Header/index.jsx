@@ -5,13 +5,13 @@ import './styles.scss';
 
 export const Header = () => {
   return (
-    <header className="header">
+    <header className="container--responsive-header header">
       <Logo classElement="header__sp-labs--color" />
       <nav className="header__navigation nav">
-        <AnchorLink elementClassName="nav__link--color-white" to="#">
+        <AnchorLink elementClassName="nav__link--color-white nav__link--text-style" to="#">
           cases
         </AnchorLink>
-        <AnchorLink elementClassName="nav__link--color-white" to="#">
+        <AnchorLink elementClassName="nav__link--color-white nav__link--text-style" to="#">
           contato
         </AnchorLink>
       </nav>

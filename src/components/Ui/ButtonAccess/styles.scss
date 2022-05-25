@@ -22,7 +22,7 @@
     font-size: $font-size-tiny;
     font-weight: 500;
     line-height: 150%;
-    color: #343434;
+    color: $dark-grey-color;
   }
 
   &__arrow-image {
@@ -36,7 +36,7 @@
   transition: border-color .3s;
 
   &:hover {
-    border-color: #343434;
+    border-color: $dark-grey-color;
 
     .button-access__arrow-image {
       -webkit-animation: translate-image .3s linear forwards;

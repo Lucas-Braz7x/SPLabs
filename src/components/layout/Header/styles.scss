@@ -6,23 +6,35 @@
   align-items: center;
 
   height: 43.56px;
+  width: 100%;
 
-  margin-top: 42px;
-  padding-top: 0;
-  z-index: 20;
+  position: absolute;
+  top: 42px;
 
-  &__sp-labs--color {
-    color: $background-color;
+  z-index: 2;
+
+  &__sp-labs {
+    &--color {
+      color: $background-color;
+    }
+
   }
-
 
   &__navigation {
 
     display: flex;
     gap: 32px;
 
-    .nav__link--color-white {
-      color: $background-color;
+    .nav__link {
+      &--color-white {
+        color: $background-color;
+      }
+
+      &--text-style {
+        font-weight: 500;
+        line-height: 19px;
+      }
+
     }
 
   }

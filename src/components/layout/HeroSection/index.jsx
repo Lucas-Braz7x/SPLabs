@@ -1,12 +1,9 @@
 import React from 'react';
 import './styles.scss';
-import { Header } from '../..';
 import { Button } from '../../Ui';
 export const HeroSection = () => {
   return (
     <section className="container--responsive hero-section">
-      <Header />
-
       <div className="hero-section__hero">
         <h1 className="hero__title">
           imagine, crie, implemente e <span className="hero__title--font-style">evolua</span>

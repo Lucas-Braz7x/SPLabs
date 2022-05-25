@@ -14,11 +14,13 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: $font-size-tiny;
-  letter-spacing: 10%;
+  letter-spacing: 0.1em;
   line-height: 150%;
 
+  color: $dark-grey-color;
+
   &--bg-color {
-    background: #5DFED6;
+    background: $primary-color;
     transition: background .3s;
 
     &:hover {

@@ -1,9 +1,10 @@
 import React from 'react';
-import { Cases, Contact, Container, Footer, HeroSection, VideoContainer } from '../components';
+import { Container, Header, HeroSection, Cases, VideoContainer, Contact, Footer } from '../components';
 
 export const Home = () => {
   return (
     <Container>
+      <Header />
       <HeroSection />
       <Cases />
       <VideoContainer />

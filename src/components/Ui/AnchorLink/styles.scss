@@ -4,18 +4,21 @@
   display: flex;
 
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: $font-size-mini;
-  text-decoration: none;
   letter-spacing: -0.015em;
-  line-height: 19px;
 
-  transition: text-decoration .3s;
-
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0);
   text-transform: capitalize;
+
+
+  transition: text-decoration-color 1s;
 
   &:hover {
     cursor: default;
-    text-decoration: underline;
+
+    text-decoration-color: rgba(255, 255, 255, .8);
+
   }
+
 }

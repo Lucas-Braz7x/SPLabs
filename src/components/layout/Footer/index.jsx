@@ -12,7 +12,7 @@ export const Footer = () => {
         <div className="footer__links links">
           <div className="links__items">
             <span className="links__items__text">SP Labs</span>
-            <AnchorLink to="#" elementClassName="links__items__link">
+            <AnchorLink to="#" elementClassName="links__items__link links__items__link--text-style">
               Política de Privacidade
             </AnchorLink>
           </div>
@@ -20,17 +20,17 @@ export const Footer = () => {
             <span className="links__items__text">sem processo</span>
             <ul className="links__items__list">
               <li>
-                <AnchorLink to="#" elementClassName="links__items__link">
+                <AnchorLink to="#" elementClassName="links__items__link links__items__link--text-style">
                   site
                 </AnchorLink>
               </li>
               <li>
-                <AnchorLink to="#" elementClassName="links__items__link">
+                <AnchorLink to="#" elementClassName="links__items__link links__items__link--text-style">
                   produtos
                 </AnchorLink>
               </li>
               <li>
-                <AnchorLink to="#" elementClassName="links__items__link">
+                <AnchorLink to="#" elementClassName="links__items__link links__items__link--text-style">
                   blog
                 </AnchorLink>
               </li>
